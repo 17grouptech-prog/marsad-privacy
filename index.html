@@ -13,10 +13,13 @@ h2{color:#1F4A3D;margin-top:2.5rem}
 .updated{color:#666;font-size:.9rem}
 .box{background:#fff;border-right:4px solid #1F4A3D;padding:1rem 1.25rem;
 margin:1.5rem 0;border-radius:4px}
+[dir="ltr"] .box{border-right:none;border-left:4px solid #1F4A3D}
 table{width:100%;border-collapse:collapse;margin:1rem 0;background:#fff}
 th,td{border:1px solid #ddd;padding:.7rem;text-align:right}
+[dir="ltr"] th,[dir="ltr"] td{text-align:left}
 th{background:#1F4A3D;color:#fff}
 code{background:#eee;padding:.15rem .4rem;border-radius:3px;font-size:.9em}
+a{color:#1F4A3D}
 footer{margin-top:3rem;padding-top:1.5rem;border-top:1px solid #ddd;
 color:#666;font-size:.9rem}
 </style>
@@ -24,7 +27,7 @@ color:#666;font-size:.9rem}
 <body>
 
 <h1>سياسة الخصوصية — مرصد</h1>
-<p class="updated">آخر تحديث: 3 تشرين الأول 2026</p>
+<p class="updated">آخر تحديث: 5 تشرين الثاني 2026</p>
 
 <div class="box">
 مرصد تطبيق لتنظيم المصاريف الشخصية. هذه الصفحة تشرح ما نجمعه،
@@ -35,7 +38,8 @@ color:#666;font-size:.9rem}
 
 <table>
 <tr><th>البيانات</th><th>السبب</th></tr>
-<tr><td>بريدك الإلكتروني واسمك من حساب Google</td>
+<tr><td>بريدك الإلكتروني واسمك — من حساب Google إن اخترت الدخول به،
+أو البريد الذي تسجّله بنفسك إن اخترت الدخول ببريد وكلمة مرور</td>
 <td>إنشاء حسابك وربط بياناتك به</td></tr>
 <tr><td>معاملاتك المالية: المبالغ والتصنيفات والتواريخ وأسماء المحلات
 والملاحظات</td>
@@ -44,7 +48,15 @@ color:#666;font-size:.9rem}
 <td>نفس السبب</td></tr>
 <tr><td>إعداداتك: اللغة والعملة والمنطقة</td>
 <td>لتظهر كما ضبطتها على أي جهاز</td></tr>
+<tr><td>حالة اشتراكك: نشط أو تجريبي أو منتهٍ، وتاريخ انتهائه</td>
+<td>لمعرفة ما إذا كان بإمكانك فتح التطبيق، ولا تتضمن أي بيانات دفع</td></tr>
 </table>
+
+<p>
+إن اخترت الدخول ببريد وكلمة مرور، فكلمة المرور لا تصلنا ولا نخزّنها.
+يتولّاها <a href="https://supabase.com/privacy">Supabase</a> مشفّرة،
+ولا نملك طريقة لقراءتها.
+</p>
 
 <h2>ما لا نجمعه</h2>
 
@@ -52,6 +64,7 @@ color:#666;font-size:.9rem}
 <li>لا نربط حسابك البنكي ولا بطاقاتك، ولا نصل إليها بأي شكل</li>
 <li>لا نجمع موقعك</li>
 <li>لا نجمع جهات اتصالك</li>
+<li>لا نستخدم أي أدوات تحليلات أو تتبّع إعلاني، ولا نجمع معرّف الإعلانات</li>
 <li>لا نبيع بياناتك ولا نشاركها مع أي جهة لأغراض تسويقية</li>
 </ul>
 
@@ -84,6 +97,10 @@ color:#666;font-size:.9rem}
 <tr><td>الكاميرا</td><td>تصوير الفواتير فقط، ولا يُطلب إلا عند أول
 محاولة تصوير. يمكنك رفضه والتطبيق يعمل بالكامل بدونه</td></tr>
 <tr><td>الإنترنت</td><td>تسجيل الدخول والمزامنة</td></tr>
+<tr><td>الإشعارات</td><td>تذكيرات تضبطها أنت: موعد راتب، اشتراك على وشك
+التجديد، ميزانية قاربت على الانتهاء. يمكنك رفضه والتطبيق يعمل بدونه</td></tr>
+<tr><td>التشغيل بعد إعادة التشغيل</td><td>لإعادة ضبط تذكيراتك بعد إطفاء
+الجهاز، وإلا ضاعت. لا يُستعمل لأي شيء آخر</td></tr>
 </table>
 
 <h2>حقوقك</h2>
@@ -91,11 +108,21 @@ color:#666;font-size:.9rem}
 <ul>
 <li><strong>تصدير بياناتك:</strong> ملف CSV كامل من داخل التطبيق،
 في أي وقت، ويعمل حتى بدون اشتراك فعّال</li>
-<li><strong>حذف حسابك وبياناتك:</strong> راسلنا على البريد أدناه
-وتُحذف خلال ثلاثين يوماً</li>
+
+<li><strong>حذف حسابك وبياناتك:</strong> من داخل التطبيق مباشرة —
+<code>الإعدادات ← الحساب ← حذف الحساب</code>. الحذف فوري ونهائي ولا
+يحتاج موافقة منّا ولا انتظار. وإن كنت قد حذفت التطبيق من جهازك،
+راسلنا من العنوان نفسه الذي سجّلت به ونُنفّذه خلال سبعة أيام عمل.
+التفاصيل كاملة في <a href="./delete-account.html">صفحة حذف الحساب</a>.</li>
+
 <li><strong>الاطلاع على بياناتك:</strong> كلها ظاهرة داخل التطبيق،
 ويمكن تصديرها</li>
 </ul>
+
+<p>
+النسخ الاحتياطية المشفّرة تنتهي صلاحيتها تلقائياً خلال ثلاثين يوماً
+من الحذف. بعدها لا يبقى أثر.
+</p>
 
 <h2>الأطفال</h2>
 
@@ -109,6 +136,12 @@ color:#666;font-size:.9rem}
 الاشتراك يُدار عبر Google Play بالكامل. لا نرى بيانات بطاقتك ولا
 نحفظها، ويخضع الدفع
 <a href="https://policies.google.com/privacy">لسياسة خصوصية Google</a>.
+ما يصلنا من Google هو أن اشتراكاً ما نشط أو منتهٍ، لا أكثر.
+</p>
+
+<p>
+شروط الاشتراك والإلغاء في
+<a href="./terms.html">شروط الاستخدام</a>.
 </p>
 
 <h2>التغييرات</h2>
@@ -130,24 +163,33 @@ color:#666;font-size:.9rem}
 <h1 dir="ltr" style="text-align:left">Privacy Policy — Marsad</h1>
 <div dir="ltr" style="text-align:left">
 
-<p class="updated">Last updated: 3 October 2026</p>
+<p class="updated">Last updated: 5 November 2026</p>
 
 <h2>What we collect</h2>
 <ul>
-<li>Your email address and name from your Google account, to create
-your account</li>
+<li>Your email address and name — from your Google account if you sign in
+that way, or the address you register yourself if you sign in with an
+email and password</li>
 <li>Your transactions: amounts, categories, dates, merchant names
 and notes</li>
 <li>Your budgets, income sources and subscriptions</li>
 <li>Your settings: language, currency and region</li>
+<li>Your subscription state: active, trial or expired, and when it ends.
+It contains no payment details.</li>
 </ul>
+
+<p>
+If you sign in with an email and password, the password never reaches us
+and we do not store it. <a href="https://supabase.com/privacy">Supabase</a>
+holds it hashed, and we have no way to read it.
+</p>
 
 <h2>What we do not collect</h2>
 <ul>
 <li>No bank or card connections of any kind</li>
 <li>No location</li>
 <li>No contacts</li>
-
+<li>No analytics or ad-tracking of any kind, and no advertising ID</li>
 <li>We never sell or share your data for marketing</li>
 </ul>
 
@@ -167,18 +209,38 @@ to an unexpired warranty.
 </p>
 
 <h2>Permissions</h2>
-<p>
-Camera, for photographing receipts only, requested the first time you
-try. The app works fully without it. Internet, for sign-in and sync.
-</p>
+<ul>
+<li><strong>Camera</strong> — for photographing receipts only, requested
+the first time you try. The app works fully without it.</li>
+<li><strong>Internet</strong> — for sign-in and sync.</li>
+<li><strong>Notifications</strong> — for reminders you set yourself: a
+payday, a subscription about to renew, a budget running low. The app
+works without it.</li>
+<li><strong>Run after restart</strong> — to restore your reminders after
+the device is switched off, which would otherwise lose them. It is used
+for nothing else.</li>
+</ul>
 
 <h2>Your rights</h2>
 <ul>
-<li>Export everything as CSV from inside the app, at any time, with or
-without an active subscription</li>
-<li>Request deletion of your account and data by email; completed
-within thirty days</li>
+<li><strong>Export everything</strong> as CSV from inside the app, at any
+time, with or without an active subscription</li>
+
+<li><strong>Delete your account and data</strong> from inside the app —
+<code>Settings &rarr; Account &rarr; Delete account</code>. Deletion is
+immediate and permanent; it needs no approval from us and no waiting. If
+you have already uninstalled the app, email us from the address you
+signed up with and we complete it within seven business days. Full
+details on the <a href="./delete-account.html">account deletion page</a>.</li>
+
+<li><strong>See your data</strong> — all of it is visible inside the app
+and can be exported</li>
 </ul>
+
+<p>
+Encrypted backups expire on their own within thirty days of deletion.
+After that there is no trace left.
+</p>
 
 <h2>Children</h2>
 <p>
@@ -189,7 +251,18 @@ their data.
 <h2>Payments</h2>
 <p>
 Subscriptions are handled entirely by Google Play. We never see or
-store your card details.
+store your card details. What reaches us from Google is whether a
+subscription is active or expired, and nothing more.
+</p>
+<p>
+Subscription and cancellation terms are in the
+<a href="./terms.html">Terms of Service</a>.
+</p>
+
+<h2>Changes</h2>
+<p>
+Any change to this policy is published here with the date above updated.
+Material changes are announced inside the app.
 </p>
 
 <h2>Contact</h2>
@@ -199,7 +272,9 @@ store your card details.
 </div>
 
 <footer>
-17 Group &middot; 2026
+17 Group &middot; 2026 &middot;
+<a href="./terms.html">شروط الاستخدام / Terms</a> &middot;
+<a href="./delete-account.html">حذف الحساب / Delete account</a>
 </footer>
 
 </body>
